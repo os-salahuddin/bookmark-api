@@ -64,7 +64,7 @@ export class AuthService {
       user.hash,
       dto.password,
     );
-    // if password incorrect throw exception
+
     if (!pwMatches)
       throw new ForbiddenException(
         'Credentials incorrect',
